@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Button for adding an image. -->
+    <!-- 'match_parent' makes the button width match the parent's width. -->
+    <!-- 'wrap_content' makes the button height just enough to fit its content. -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:gravity="center"
+        android:id="@+id/button_add_image"
+        android:text="Add Image"/>
+
+    <!-- ImageView for displaying the selected or captured image. -->
+    <!-- Initially hidden, set to visible programmatically after an image is selected. -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/selected_image_view"
+        android:visibility="gone" />
+
+    <!-- Button for deleting the selected image. -->
+    <!-- Initially hidden, shown programmatically when there is an image to delete. -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_delete_image"
+        android:text="Delete Image"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+</LinearLayout>
