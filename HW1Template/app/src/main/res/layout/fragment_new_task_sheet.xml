@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- fragment_new_task_sheet.xml: This layout is for creating a new task.
+     It MUST include input fields for task details and a button to save the task.
+     Ensuring a clear and functional design here is crucial for a positive user experience. -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- EditText for task title: It’s imperative to collect user input correctly.
+         You MUST retrieve the text entered here in NewTaskSheet.kt to create a new task. -->
+    <EditText
+        android:id="@+id/etTaskTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/task_title"
+        android:inputType="text"/>
+
+    <!-- Save button: This is NOT optional. It triggers the task saving logic.
+         Failing to implement the onClick listener for this button will render your task addition feature useless. -->
+    <Button
+        android:id="@+id/btnSaveTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save" />
+
+</LinearLayout>

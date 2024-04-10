@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- activity_main.xml: This is the MAIN LAYOUT FILE for your application.
+     You MUST include a RecyclerView for displaying the list of tasks and a FloatingActionButton for adding new tasks.
+     DO NOT proceed without understanding how each component integrates with your Kotlin code. -->
+
+<!-- RelativeLayout: Allows you to position your UI elements relative to each other or to the parent container.
+Elements can be aligned on any side of the view and can overlap. This layout is flexible and useful for complex designs.-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- RecyclerView is CRUCIAL here. It displays the list of tasks.
+         You MUST set the layout manager and adapter in MainActivity.kt.
+         If you neglect this, your app will NOT display any tasks. It’s imperative to bind data correctly. -->
+    <RecyclerView
+        android:id="@+id/rvTasks"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/task_item_cell"
+        android:descendantFocusability="blocksDescendants" />
+
+    <!-- FloatingActionButton: This is NOT just a decorative element.
+         It’s essential for adding new tasks. When clicked, it MUST navigate to NewTaskSheet.kt.
+         Failure to implement this functionality will result in an incomplete application flow. -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabNewTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_add"
+        android:contentDescription="@string/add_new_task" />
+
+</RelativeLayout>
+
+<!-- In Android development, using multiple XML files for different parts of the UI helps in organizing the code,
+making it more manageable and modular. Each XML file typically represents a different portion of the user interface.
+
+We need two files for this app:
+
+1- fragment_new_task_sheet.xml:
+This file defines the UI for adding a new task.
+It's separated to encapsulate the functionality of task creation, allowing for better maintainability and reusability.
+For example, this UI can be displayed as a dialog or a part of a larger layout without altering the main layout logic.
+
+2- task_item_cell.xml:
+Represents the layout for each task item in the list.
+Keeping this in a separate file allows for easy modifications of the task's appearance and structure without
+impacting the main layout and facilitates reuse in different parts of the application, like in lists or grids.-->

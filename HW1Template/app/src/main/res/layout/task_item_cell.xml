@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- task_item_cell.xml: Defines how each task item should look in the list.
+     Getting this right is key for a usable interface. Each element must be placed thoughtfully. -->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <!-- TextView for displaying the task title.
+         DO NOT underestimate the importance of this view. It’s what the user sees first for each task. -->
+    <TextView
+        android:id="@+id/tvTaskTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_alignParentStart="true"/>
+
+    <!-- ImageView to mark the task as done or to delete it.
+         This MUST be interactive. Implement the necessary logic in TaskItemAdapter.kt for user actions. -->
+    <ImageView
+        android:id="@+id/ivTaskAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_action"
+        android:contentDescription="@string/action_description" />
+
+</RelativeLayout>
