@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyBluetooth</string>
+    <string name="discover_button">Discover</string>
+    <string name="display_scanned_devices">Hello</string>
+</resources>
