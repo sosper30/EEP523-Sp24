@@ -1,0 +1,1 @@
+/Users/stlp/Desktop/Kotlin/SwapSense/opencv/build/intermediates/cxx/Debug/u5h47123/obj/x86_64

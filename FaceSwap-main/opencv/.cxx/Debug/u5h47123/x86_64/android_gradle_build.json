@@ -1,0 +1,37 @@
+{
+  "buildFiles": [
+    "/Users/stlp/Desktop/Kotlin/SwapSense/opencv/libcxx_helper/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/Users/stlp/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+      "-C",
+      "/Users/stlp/Desktop/Kotlin/SwapSense/opencv/.cxx/Debug/u5h47123/x86_64",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/Users/stlp/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+    "-C",
+    "/Users/stlp/Desktop/Kotlin/SwapSense/opencv/.cxx/Debug/u5h47123/x86_64",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "opencv_jni_shared::@6890427a1f51a3e7e1df": {
+      "toolchain": "toolchain",
+      "abi": "x86_64",
+      "artifactName": "opencv_jni_shared",
+      "output": "/Users/stlp/Desktop/Kotlin/SwapSense/opencv/.cxx/Debug/u5h47123/x86_64/libopencv_jni_shared.a"
+    }
+  },
+  "toolchains": {
+    "toolchain": {
+      "cCompilerExecutable": "/Users/stlp/Library/Android/sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang.lld",
+      "cppCompilerExecutable": "/Users/stlp/Library/Android/sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++.lld"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

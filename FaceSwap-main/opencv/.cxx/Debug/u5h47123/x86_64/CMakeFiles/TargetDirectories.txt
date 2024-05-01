@@ -1,0 +1,3 @@
+/Users/stlp/Desktop/Kotlin/SwapSense/opencv/.cxx/Debug/u5h47123/x86_64/CMakeFiles/opencv_jni_shared.dir
+/Users/stlp/Desktop/Kotlin/SwapSense/opencv/.cxx/Debug/u5h47123/x86_64/CMakeFiles/edit_cache.dir
+/Users/stlp/Desktop/Kotlin/SwapSense/opencv/.cxx/Debug/u5h47123/x86_64/CMakeFiles/rebuild_cache.dir
