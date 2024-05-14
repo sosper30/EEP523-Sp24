@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="listArray">sample
+        <item>Only on Wi-Fi</item>
+        <item>On any network</item>
+    </string-array>
+    <string-array name="listValues">example
+        <item>wi-fi only</item>
+        <item>any</item>
+    </string-array>
+
+    <string-array name="secondValues">example
+        <item>Android</item>
+        <item>iOS</item>
+        <item>Flutter</item>
+    </string-array>
+</resources>

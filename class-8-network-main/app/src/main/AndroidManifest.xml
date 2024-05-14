@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.uw.ee523.class8">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Class8">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="edu.uw.ee523.class8.LaunchWebActivity"
+            android:label="Launch Web Activity" />
+        <activity
+            android:name="edu.uw.ee523.class8.WebViewActivity"
+            android:label="Embed Web View" />
+        <activity
+            android:name="edu.uw.ee523.class8.WebServiceActivity"
+            android:label="Get Data from Web Service" />
+            <activity
+                android:name="edu.uw.ee523.class8.NetworkInfoActivity"
+                android:label="Network Info" />
+            <activity android:name="edu.uw.ee523.class8.NetworkSettingsPrefActivity" />
+
+            <receiver
+                android:name="edu.uw.ee523.class8.NetworkInfoActivity$NetworkReceiver"
+                android:enabled="true"
+                android:exported="true"></receiver>
+    </application>
+
+
+
+
+</manifest>

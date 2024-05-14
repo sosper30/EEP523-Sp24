@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <ListPreference     android:title="Network Options"
+        android:summary="Select which network to use"
+        android:key="networkType"
+        android:defaultValue="any"
+        android:entries="@array/listArray"
+        android:entryValues="@array/listValues" />
+
+    <ListPreference
+        android:title="Something else"
+        android:summary="See another pref"
+        android:key="someKey"
+        android:defaultValue="sweet"
+        android:entries="@array/secondValues"
+        android:entryValues="@array/secondValues"
+        />
+
+</PreferenceScreen>
